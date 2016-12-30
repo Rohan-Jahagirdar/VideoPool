@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "77701833038",
+    "project_id": "firebase-video-pool"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:77701833038:android:71491700cef4b5c0",
+        "android_client_info": {
+          "package_name": "com.rohanjahagirdar.videopool"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9__eIdg1D6bdRfrXth-SitXPBpCe__LA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

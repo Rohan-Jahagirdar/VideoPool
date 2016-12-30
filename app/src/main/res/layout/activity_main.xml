@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.rohanjahagirdar.videopool.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/primary_layout"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/margin_extra_large">
+
+        <ImageView android:layout_width="@dimen/width_logo"
+            android:layout_height="@dimen/height_logo"
+            android:id="@+id/video_pool_logo"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/icon"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/video_pool_logo"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginLeft="@dimen/margin_extra"
+            android:layout_marginRight="@dimen/margin_default">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/youtube_link_input_layout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <android.support.design.widget.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/enter_youtube_link"
+                    android:textSize="@dimen/font_size_xl"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:inputType="textUri"
+                    android:hint="@string/youtube_link_hint"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageButton
+                android:id="@+id/add"
+                style="?android:buttonBarButtonStyle"
+                android:paddingTop="@dimen/padding_extra"
+                android:src="@drawable/ic_send_white"
+                android:tint="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>
